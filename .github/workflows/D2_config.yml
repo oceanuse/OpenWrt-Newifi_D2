@@ -8,7 +8,7 @@
 # Description: Build OpenWrt using GitHub Actions
 #
 
-name: Build newifi3-D2 
+name: D2配置文件生成
 
 env:
   REPO_URL: https://github.com/coolsnowwolf/lede
@@ -29,7 +29,7 @@ on:
     inputs:
       ssh:
         description: 'SSH connection to Actions'
-        required: false
+        required: true
         default: 'false'
 #  schedule:
 #    - cron: 0 8 */5 * *
